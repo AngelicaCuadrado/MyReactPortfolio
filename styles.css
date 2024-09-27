@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5F6; 
+    color: #034C52;
+}
+
+.containerForm{
+    margin-left: 120px;
+    margin-right: 800px;
+    padding: 0;
+}
+
+.mainContainer{
+    margin: 100px;
+    padding: 0;
+}
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0A7075; 
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: #FDA898;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    background-color: #FFF5F6; 
+}
+
+h1 {
+    color: #FF6A6A; 
+    margin-bottom: 20px;
+}
+
+p, a {
+    font-size: 1.6em;
+    line-height: 1.6;
+    margin-right: 80px;
+}
+
+a {
+    color: #F48779; 
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #FDA898; 
+}
+
+.project {
+    margin-bottom: 30px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #0A7075;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: 700;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 2px solid #0A7075; 
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #F48779; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #FDA898; 
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; 
+}
+.text {
+    flex: 1; 
+    margin-right: 20px; 
+    font-size: 1.6em;
+    line-height: 1.6;
+    margin-right: 80px;
+}
+
+.textLeft {
+    flex: 1; 
+    margin-left: 20px; 
+    font-size: 1.6em;
+    line-height: 1.6;
+    margin-left: 80px;
+}
+
+.image {
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.imageProjects {
+    width: 700px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.containerHome {
+    display: flex;
+    align-items: flex-start; 
+}
+.textHome {
+    flex: 1; 
+    margin-right: 20px; 
+    font-size: 3.2em;
+    line-height: 1.6;
+    margin-right: 80px;
+}
+
+.imageHome {
+    width: 500px; 
+    height: auto; 
+}
+
+.titleHome {
+    font-size: 3.5em;
+    line-height: 1.6;
+}
+
+.services-list {
+    flex: 1;
+}
+.service-image {
+    width: 500px;
+    height: auto;
+    margin-left: 80px;
+    margin-top: 400px;
+}

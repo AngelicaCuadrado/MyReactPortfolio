@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> About Me - Personal Portfolio </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+    const mainContent = React.createElement("main", { className: "mainContainer" },
+        React.createElement("h1", null, "Angelica Cuadrado Rodriguez | Student ID: 301373453"),
+        React.createElement("a", { href: "AngelicaCuadrado_Resume_Templat_e2024.pdf", download: true }, "Download my resume clicking here!"),
+        React.createElement("div", { className: "container" },
+        React.createElement("p",{className: "text"}, "My name is Angelica Cuadrado, I am from Colombia - Latin America, I am 26 years old and this is my third degree related to technology. In Colombia I made two careers, electronic engineering and technology in electromedicine. I am very dedicated and I always like to learn new things. I love creating and using every IT tool to exploit my creativity. I like electronic engineering because it is a fascinating field that combines creativity, logic and innovation. Electronic engineering can solve many problems and improve many aspects of our lives, such as communication, entertainment, health, security and education."),
+        React.createElement("img", {src: "Images/angelica.jpg",alt: "Angelica",className: "image"})),
+        React.createElement("h1", null, "My Favorite Activities"),
+        React.createElement("div", { className: "container" },
+        React.createElement("ul", null,
+            React.createElement("li", {className: "text"}, "I like to play videogames"),
+            React.createElement("li",{className: "text"}, "I like to spend time with my family and friends"),
+            React.createElement("li", {className: "text"}, "I love to explore new things and places"),
+            React.createElement("li", {className: "text"}, "I love to taste new food and learn from new cultures"),
+            React.createElement("li", {className: "text"}, "I like to spend time with my friends and family"),
+            React.createElement("li", {className: "text"}, "I love to take out my dog and stay a while with him in the park"),
+            React.createElement("li", {className: "text"}, "I like to see horror movies at home"),
+        )),
+       
+        React.createElement("h1", null, "Studies"),
+        React.createElement("div", { className: "container" },
+        React.createElement("hr", null),
+        React.createElement("dl", null,
+            React.createElement("dt", {className: "text"}, React.createElement("strong", null, "Electronic engineering")),
+            React.createElement("dd", {className: "text"}, "Is a dynamic field that deals with the design, development, and application of electronic devices and systems. You can learn how to create and improve technologies that are used in various industries, such as telecommunications, robotics, consumer electronics, aerospace, and more."),
+            React.createElement("dt", {className: "text"}, React.createElement("strong", null, "Technology in electromedicine")),
+            React.createElement("dd", {className: "text"}, "Is a field that applies electrical signals and devices to diagnose and treat various diseases and conditions. It is related to programming because many of the devices use software and algorithms to control and modulate the electrical impulses that interact with the body’s nervous system and organs."),
+            React.createElement("dt", {className: "text"}, React.createElement("strong", null, "Game Programming")),
+            React.createElement("dd", {className: "text"}, "Is a field that deals with the development and implementation of games. You can learn how to create and improve games that are used in various industries, such as video games, board games, and more. It is related to my previous experience and is one of my biggest passions in life, games also change so many aspects of my life and that's the principal reason why I decided to complete my studies with this degree.")
+        )),
+        React.createElement("h1", null,"Favorite Game: The Legend Of Zelda"),
+        React.createElement("p", {className: "text"}, "The Legend of Zelda is a popular video game series created by Nintendo. It features the adventures of Link, a young hero who must save the land of Hyrule from the evil forces of Ganon, the King of Darkness. The games are known for their exploration, puzzle-solving, combat, and story elements. Some of the reasons why The Legend of Zelda is my favorite game because:"),
+        React.createElement("div", { className: "container" },
+        React.createElement("img", { src: "Images/zelda.jpg", alt: "Zelda", className: "image" }),
+        React.createElement("ul", { className: "textLeft" },
+            React.createElement("li",null, "I enjoy the immersive and rich world of Hyrule, which has a history, culture, and mythology of its own."),
+            React.createElement("li",null, "I like to discover new places, secrets, and characters as you explore the different regions and dungeons."),
+            React.createElement("li",null, "I like the challenge and satisfaction of solving puzzles and finding items that help you progress in the game."),
+            React.createElement("li",null, "I appreciate the clever design and variety of the puzzles, which often require you to use your logic, creativity, and observation skills."))
+        ));
+
+    const footer = React.createElement("footer", null,
+        React.createElement("hr", null),
+        React.createElement("small", null, React.createElement("i", null, "Copyright © 2024 Angelica Cuadrado | ID: 301373453 | COMP229 | Third Semester |")),
+        React.createElement("small", null, React.createElement("a", { href: "mailto:mcuadra3@my.centennialcollege.ca" }, "mcuadra3@my.centennialcollege.ca"))
+    );
+
+    const aboutPage = React.createElement("div", null, header, mainContent, footer);
+
+    ReactDOM.render(aboutPage, document.getElementById("root"));
+</script>
+</body>
+</html>

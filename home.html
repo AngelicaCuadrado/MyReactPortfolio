@@ -1,0 +1,35 @@
+<!-- ANGELICA CUADRADO RODRIGUEZ 301373453 COMP -->
+ <!-- This is my main page (home) from my project, is really simple make with react elements -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+    const mainContent = React.createElement("main", { className: "mainContainer" },
+        React.createElement("h1", {className:"titleHome"}, "Welcome to My Personal Portfolio"),
+        React.createElement("div", { className: "containerHome" },
+        React.createElement("div", { className: "textHome" }, "I’m Angelica Cuadrado, a passionate Game Programming student at Centennial College. On this website, you’ll discover everything about me and the exciting projects I’ve worked on."),
+        React.createElement("img", {
+            src: "Images/kirbi.jpg",
+            alt: "angelica",
+            className: "imageHome"
+        })),
+        React.createElement("a", { href: "aboutMe.html" }, "Learn more about me")
+    );
+
+    const homePage = React.createElement("div", null, header, mainContent);
+
+    ReactDOM.render(homePage, document.getElementById("root"));
+</script>
+</body>
+</html>
+

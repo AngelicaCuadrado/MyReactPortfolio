@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+    const servicesList = React.createElement("ul", {className: "text"},
+        React.createElement("li", null, "General Programming"),
+        React.createElement("li", null, "Web Development"),
+        React.createElement("li", null, "Mobile Apps"),
+        React.createElement("li", null, "Programming and Web Development: Proficient in C#, C, Python, Java, J2EE and experienced in web-based development using HTML5, CSS, JavaScript, Angular, React, Blazor, Bootstrap, and GUI with PyQT5."),
+        React.createElement("li", null, "Database Management: Skilled in the administration, seeding, and maintenance of large-scale, mission-critical databases using SQL."),
+        React.createElement("li", null, "Technical Documentation: Expertise in creating and maintaining comprehensive technical documentation, including SRS and SV&V documents."),
+        React.createElement("li", null, "Software Testing and Quality Assurance: Systematic debugging procedure including code reviews, unit testing, and utilizing debugging tools."),
+        React.createElement("li", null, "Game and Simulation Design: Proficient in game design fundamentals, 3D graphics programming, simulation development using Unity and Unreal Engine."),
+        React.createElement("li", null, "External API Integration: Implemented APIs for payment processing, data retrieval, and third-party services."),
+        React.createElement("li", null, "Hardware-Software Integration and Microcontroller Expertise: Proficient in developing and programming projects using Raspberry Pi, Arduino, and the STM32 microcontroller family."),
+        React.createElement("li", null, "Circuit Design & Simulation: Proficient in Proteus and Matlab for circuit design and analysis.")
+    );
+
+    const dynamicImage = React.createElement("img", { src: "images/gameboy.gif", alt: "Dynamic Image", style: {className:"image"} });
+
+    const mainContent = React.createElement("main", null,
+        React.createElement("h1", null, "Services"),
+        servicesList,
+        dynamicImage
+    );
+
+    const servicesPage = React.createElement("div", null, header, mainContent);
+
+    ReactDOM.render(servicesPage, document.getElementById("root"));
+</script>
+</body>
+</html>

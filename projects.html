@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+     const project1 = React.createElement("div", { className: "container" },
+        React.createElement("img", { src: "Images/project1.jpg", alt: "IoT Integration Project", className: "imageProjects " }),
+        React.createElement("p", { className: "text" }, "IoT Integration Project: Developed a Device Software Interface (DSI) using Raspberry Pi for a laser control engine at Theralase. Created a graphical user interface (GUI) in PyQT5 and Python for basic firmware control. Enabled efficient and user-friendly operation of the laser system.")
+    );
+
+    const project2 = React.createElement("div", { className: "container" },
+        React.createElement("img", { src: "Images/project2.jpg", alt: "Sales Automation System", className: "imageProjects " }),
+        React.createElement("p", { className: "text" }, "Sales Automation System: Developed a system to automate sales agreements and payments for new contracts at Theralase. Designed a form for sales personnel to input customer information using PyQT5 and Python, and encrypted and sent customer information via email. Processed data on the backend using C#. Developed a web portal for users to check payments, contracts, and shipping labels, and was responsible for the logic and UI design of the web portal app. Supported the main developer with SRS documentation, API implementation, and billing logic.")
+    );
+
+    const project3 = React.createElement("div", { className: "container" },
+        React.createElement("img", { src: "Images/project3.jpg", alt: "Game Development Project", className: "imageProjects " }),
+        React.createElement("p", { className: "text" }, "Game Development Project: Collaborated in a team of four to develop a 2D platformer game using Unity. Designed background assets and menu navigation. Scripted game logic and mechanics using C#. Integrated sound effects and animations to enhance user experience.")
+    );
+
+    const mainContent = React.createElement("main", null,
+        React.createElement("h1", null, "Projects"),
+        project1,
+        project2,
+        project3
+    );
+
+    const projectsPage = React.createElement("div", null, header, mainContent);
+
+    ReactDOM.render(projectsPage, document.getElementById("root"));
+</script>
+</body>
+</html>

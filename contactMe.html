@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/react@16.8.6/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.8.6/umd/react-dom.development.js"></script>
+    <script src="common.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script>
+    const mainContent = React.createElement("main", {className: "containerForm"},
+        React.createElement("h1", null, "Contact Me"),
+        React.createElement("form", { action: "home.html"},
+            React.createElement("label", { htmlFor: "firstName" }, "First Name:"),
+            React.createElement("input", { type: "text", id: "firstName", name: "firstName", required: true }),
+            React.createElement("label", { htmlFor: "lastName" }, "Last Name:"),
+            React.createElement("input", { type: "text", id: "lastName", name: "lastName", required: true }),
+            React.createElement("label", { htmlFor: "contactNumber" }, "Contact Number:"),
+            React.createElement("input", { type: "tel", id: "contactNumber", name: "contactNumber", required: true }),
+            React.createElement("label", { htmlFor: "email" }, "Email:"),
+            React.createElement("input", { type: "email", id: "email", name: "email", required: true }),
+            React.createElement("label", { htmlFor: "message" }, "Message:"),
+            React.createElement("textarea", { id: "message", name: "message", required: true }),
+            React.createElement("button", { type: "submit" }, "Send")
+        )
+    );
+
+    const contactPage = React.createElement("div", null, header, mainContent);
+
+    ReactDOM.render(contactPage, document.getElementById("root"));
+</script>
+</body>
+</html>
